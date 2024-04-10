@@ -1335,7 +1335,7 @@ void trajOpt::bcd_time(toolpath* toolpath, robSystem* robs, colliTrain* colli, b
     bool flagAccN = true;
 
     Tstart = clock();
-    while (((Phi_0 - Phi_1) / Phi_0 > tau2 || flagAccN) && iterTime.size() < 10) {
+    while (((Phi_0 - Phi_1) / Phi_0 > tau2 || flagAccN) && iterTime.size() < 5) {
         Phi_0 = Phi_1;
 
         if (accnTTP.cwiseAbs().maxCoeff() < aTTPMax_N) {

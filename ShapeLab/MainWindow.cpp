@@ -573,22 +573,25 @@ void MainWindow::setDefault() {
 
     ui->spinBox_setLayer->setValue(49);
     ui->doubleSpinBox_vTip->setValue(20);
-    ui->lineEdit_consVt->setText("60");
-    ui->lineEdit_consAt->setText("200");
-    ui->lineEdit_consAn->setText("200");
+    ui->lineEdit_consVt->setText("20");
+    ui->lineEdit_consAt->setText("150");
+    ui->lineEdit_consAn->setText("150");
     ui->doubleSpinBox_enhancePos->setValue(1.2);
     ui->doubleSpinBox_alpha->setValue(0.94);
     ui->doubleSpinBox_beta->setValue(0.99);
     ui->lineEdit_gamma->setText("0.98");
-    ui->doubleSpinBox_vMaxRob->setValue(0.5);
-    ui->doubleSpinBox_vMaxPos->setValue(1);
-    ui->doubleSpinBox_jMaxRob->setValue(20);
-    ui->doubleSpinBox_jMaxPos->setValue(20);
-    ui->doubleSpinBox_kv->setValue(0);
+    ui->doubleSpinBox_vMaxRob->setValue(0.6);
+    ui->doubleSpinBox_vMaxPos->setValue(10);
+    ui->doubleSpinBox_jMaxRob->setValue(50);
+    ui->doubleSpinBox_jMaxPos->setValue(50);
+    ui->doubleSpinBox_kv->setValue(0.1);
     ui->doubleSpinBox_ka->setValue(0.5);
     ui->doubleSpinBox_kj->setValue(1);
 
-    ui->lineEdit_kt->setText("1");
+    ui->checkBox_inputTime->setChecked(true);
+    ui->checkBox_optTime->setChecked(true);
+
+    ui->lineEdit_kt->setText("0.001");
 
     ui->doubleSpinBox_sepPath->setValue(3);
 
@@ -629,6 +632,7 @@ void::MainWindow::loadRob() {
         IO_operator->readRobotData(robs, FileDir);
     }
 
+
     //导入变位机模型
     PolygenMesh* posModel = this->_detectPolygenMesh(POSITIONER);
     FileDir = "../DataSet/RobSys/a250Model/";
@@ -639,6 +643,7 @@ void::MainWindow::loadRob() {
     else {
         IO_operator->readPosData(robs, FileDir);
     }
+
 
     //设置变位机初始位姿
     robs->setInitialPos(posModel);
