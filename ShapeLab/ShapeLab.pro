@@ -15,11 +15,35 @@ UI_DIR += ./GeneratedFiles
 INCLUDEPATH += $$PWD/../ThirdPartyDependence/eigen3
 INCLUDEPATH += $$PWD/../ThirdPartyDependence
 
-HEADERS  +=MainWindow.h
+HEADERS  +=MainWindow.h\
+alphanum.hpp\
+colliTrain.h\
+dirent.h\
+fileIO.h\
+mathTools.h\
+nlopt.h\
+nlopt.hpp\
+osqp++.h\
+pathStruct.h\
+robSystem.h\
+svm_grad.h\
+taseMethod.h\
+test_fcl_utility.h\
+trajOpt.h
 
 #ui_MainWindow not included.
 SOURCES += main.cpp\
-MainWindow.cpp
+MainWindow.cpp\
+colliTrain.cpp\
+fielIO.cpp\
+mathTools.cpp\
+osqp++.cc\
+pathStruct.cpp\
+robSystem.cpp\
+svm_grad.cpp\
+taseMethod.cpp\
+test_fcl_utility.cpp\
+trajOpt.cpp
 
 
 FORMS += ./MainWindow.ui
@@ -68,3 +92,17 @@ else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../GLKL
 else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../GLKLib/release/GLKLib.lib
 else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../GLKLib/debug/GLKLib.lib
 else:unix: PRE_TARGETDEPS += $$OUT_PWD/../GLKLib/libGLKLib.a
+
+##set by Yongxue
+INCLUDEPATH += $$PWD/../ThirdPartyDependence/osqp
+INCLUDEPATH += $$PWD/../ThirdPartyDependence/libsvm
+DEFINES += _USE_MATH_DEFINES
+
+win32:CONFIG(release, debug|release): LIBS += osqp.lib
+else:win32:CONFIG(debug, debug|release): LIBS += osqp.lib
+
+win32:CONFIG(release, debug|release): LIBS += osqp-cpp.lib
+else:win32:CONFIG(debug, debug|release): LIBS += osqp-cpp.lib
+
+win32:CONFIG(release, debug|release): LIBS += libsvm.lib 
+else:win32:CONFIG(debug, debug|release): LIBS += libsvm.lib 
