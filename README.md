@@ -14,3 +14,17 @@ Please compile the code with Qmake file "ShapeLab.pro".
 - **Add additional library dictionaries** at: ShapeLab Property Pages -> Configuration Properties -> Linker -> General -> Additional Library Dictionaries -> add two dictionaries "..\ThirdPartyDependence\libsvm" and "..\ThirdPartyDependence\osqp"
 - **Enable OpenMP to get best performace** at: ShapeLab Property Pages -> Configuration Properties -> C/C++ -> Language -> Open MP Support -> Select '**Yes (/openmp)**'
 - **Open Console** at: ShapeLab Property Pages -> Configuration Properties -> Linker -> System -> SubSystem -> Select '**Console (/SUBSYSTEM:CONSOLE)**'
+
+## Usage
+
+**Step 0: Load robot model**
+Click button **Load Robots** on the right side of the UI.
+
+**Step 1: Load toolpath and layer**
+Click button **inputPathAndLayer**.
+
+**Step 2: Initialize optimization**
+Click button **Initialize Optimization**.
+
+**Step 3: Optimization**
+Click button **Optimization**. The robot joint angles, as well as the position and orientation of tool in the base coordinate system, will be saved into **\DataSet\output**
