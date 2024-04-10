@@ -580,18 +580,18 @@ void MainWindow::setDefault() {
     ui->doubleSpinBox_alpha->setValue(0.94);
     ui->doubleSpinBox_beta->setValue(0.99);
     ui->lineEdit_gamma->setText("0.98");
-    ui->doubleSpinBox_vMaxRob->setValue(0.6);
-    ui->doubleSpinBox_vMaxPos->setValue(10);
-    ui->doubleSpinBox_jMaxRob->setValue(50);
-    ui->doubleSpinBox_jMaxPos->setValue(50);
-    ui->doubleSpinBox_kv->setValue(0.1);
+    ui->doubleSpinBox_vMaxRob->setValue(0.5);
+    ui->doubleSpinBox_vMaxPos->setValue(1);
+    ui->doubleSpinBox_jMaxRob->setValue(20);
+    ui->doubleSpinBox_jMaxPos->setValue(20);
+    ui->doubleSpinBox_kv->setValue(0);
     ui->doubleSpinBox_ka->setValue(0.5);
     ui->doubleSpinBox_kj->setValue(1);
 
     ui->checkBox_inputTime->setChecked(true);
     ui->checkBox_optTime->setChecked(true);
 
-    ui->lineEdit_kt->setText("0.001");
+    ui->lineEdit_kt->setText("1");
 
     ui->doubleSpinBox_sepPath->setValue(3);
 
