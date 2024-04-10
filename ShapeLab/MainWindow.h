@@ -93,7 +93,6 @@ private slots:
     void loadRob();
     void getBaseColi();
     void trainBaseColi();
-    void tmp();
     void setDefault();
     void inputPathLayer();
     void iniOpt();

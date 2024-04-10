@@ -37,7 +37,6 @@
 #include "mathTools.h"
 #include "robSystem.h"
 #include "colliTrain.h"
-#include "taseMethod.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -882,19 +881,6 @@ void MainWindow::trainBaseColi() {
     std::cout << "end of train" << std::endl;
 }
 
-void MainWindow::tmp() {
-    std::cout<<"\n\nstart tmp"<<std::endl;
-    taseMethod* tase1 = new taseMethod();
-    tase1->test = 1;
-    taseMethod* tase2 = new taseMethod(*tase1);
-    tase2->test = 2;
-
-    std::cout<<"tase 1"<<tase1->test<<std::endl;
-    std::cout<<"tase 2"<<tase2->test<<std::endl;
-
-    delete tase1;
-    delete tase2;
-}
 
 void MainWindow::inputPathLayer() {
     std::string baseFile = ui->lineEdit_SorceDataDir->text().toStdString();
