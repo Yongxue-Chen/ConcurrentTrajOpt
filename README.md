@@ -21,10 +21,10 @@ Please compile the code with Qmake file "ShapeLab.pro".
 Click button **Load Robots** on the right side of the UI.
 
 **Step 1: Load toolpath and layer**
-Click button **inputPathAndLayer**. Some examples for test given in **\DataSet\model**
+Click button **inputPathAndLayer**. Some examples for testing are given in **\DataSet\models**
 
 **Step 2: Initialize optimization**
 Click button **Initialize Optimization**.
 
 **Step 3: Optimization**
-Click button **Optimization**. The robot joint angles, as well as the position and orientation of tool in the base coordinate system, will be saved into **\DataSet\output**
+Click button **Optimization**. The robot joint angles, as well as the position and orientation of the tool in the base coordinate system, will be saved into **\DataSet\output**
