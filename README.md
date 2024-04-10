@@ -21,7 +21,7 @@ Please compile the code with Qmake file "ShapeLab.pro".
 Click button **Load Robots** on the right side of the UI.
 
 **Step 1: Load toolpath and layer**
-Click button **inputPathAndLayer**.
+Click button **inputPathAndLayer**. Some examples for test given in **\DataSet\model**
 
 **Step 2: Initialize optimization**
 Click button **Initialize Optimization**.
