@@ -21,13 +21,10 @@ colliTrain.h\
 dirent.h\
 fileIO.h\
 mathTools.h\
-nlopt.h\
-nlopt.hpp\
 osqp++.h\
 pathStruct.h\
 robSystem.h\
 svm_grad.h\
-taseMethod.h\
 test_fcl_utility.h\
 trajOpt.h
 
@@ -41,7 +38,6 @@ osqp++.cc\
 pathStruct.cpp\
 robSystem.cpp\
 svm_grad.cpp\
-taseMethod.cpp\
 test_fcl_utility.cpp\
 trajOpt.cpp
 
