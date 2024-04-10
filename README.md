@@ -9,6 +9,7 @@ Please compile the code with Qmake file "ShapeLab.pro".
 **Install Steps**:
 - **Install Visual Studio Extension plug-in (QT VS Tool)** to open the *.pro file and generate the project
 - **Set 'ShapeLab' as the start up project**
+- **Change Platform Toolset** for three projects (GLKLib, QMeshLib, and ShapeLab) if not matched. General->General Properties->Platform Toolset
 - **Install required packages** (1)fcl, (2)abseil, (3)armadillo, (4)gsl, and (5)gtest in the ShapeLab project. An easy way to install these packages is to use the “[vcpkg](https://github.com/microsoft/vcpkg)”.
 
 1. vcpkg: fcl, abseil, armadillo, gsl, gtest
