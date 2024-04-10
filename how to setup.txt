@@ -1,8 +1,0 @@
-1. vcpkg: fcl, abseil, armadillo, gsl, gtest
-2. 设置起始项目，添加h、cpp
-3. c/c++: 附加包含目录中添加：ThirdPartyDependency/osqp 以及 libsvm
-          预处理器定义添加： _USE_MATH_DEFINES
-          语言：打开openmp
-4. 链接器： 附加库目录添加：ThirdPartyDependency/osqp 以及 libsvm
-           附加依赖项添加：osqp.lib osqp-cpp.lib libsvm.lib
-           系统：修改为控制台
