@@ -30,5 +30,6 @@ Click button **Initialize Optimization**.
 Click button **Optimization**. The robot joint angles, as well as the position and orientation of the tool in the base coordinate system, will be saved into **\DataSet\output**
 
 ## Contact Information
-- Yongxue Chen (yongxue.chen@postgrad.manchester.ac.uk)
-- Charlie C.L. Wang (changling.wang@manchester.ac.uk)
+Yongxue Chen (yongxue.chen@postgrad.manchester.ac.uk)
+
+Charlie C.L. Wang (changling.wang@manchester.ac.uk)
