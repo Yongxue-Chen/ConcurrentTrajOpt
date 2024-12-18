@@ -1,6 +1,6 @@
 # Co-Optimization of Tool Orientations, Kinematic Redundancy, and Waypoint Timing for Robot-Assisted Manufacturing
 
-	Yongxue Chen, Tianyu Zhang, Yuming Huang, Tao Liu, and Charlie C.L. Wang, "Co-optimization of tool orientation, kinematic redundancy, and timespan for robot-assisted manufacturing", Conditionally Accepted, December 2024.
+Yongxue Chen, Tianyu Zhang, Yuming Huang, Tao Liu, and Charlie C.L. Wang, "Co-optimization of tool orientation, kinematic redundancy, and timespan for robot-assisted manufacturing", Conditionally Accepted, December 2024.
 
 [Arxiv Paper](https://arxiv.org/abs/2409.13448)
 
