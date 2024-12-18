@@ -1,5 +1,9 @@
 # Co-Optimization of Tool Orientations, Kinematic Redundancy, and Waypoint Timing for Robot-Assisted Manufacturing
 
+Yongxue Chen, Tianyu Zhang, Yuming Huang, Tao Liu, and Charlie C.L. Wang, " Co-Optimization of Tool Orientations, Kinematic Redundancy, and Waypoint Timing for Robot-Assisted Manufacturing"
+
+[Arxiv Paper](https://arxiv.org/abs/2409.13448)
+
 ## Installation
 
 Please compile the code with Qmake file "ShapeLab.pro".
