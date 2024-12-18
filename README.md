@@ -1,4 +1,4 @@
-# Concurrent and Scalable Trajectory Optimization for Manufacturing with Redundant Robots
+# Co-Optimization of Tool Orientations, Kinematic Redundancy, and Waypoint Timing for Robot-Assisted Manufacturing
 
 ## Installation
 
