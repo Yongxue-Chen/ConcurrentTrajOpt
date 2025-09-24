@@ -35,4 +35,4 @@ Click button **Optimization**. The robot joint angles, as well as the position a
 ## Contact Information
 Yongxue Chen (yongxue.chen@postgrad.manchester.ac.uk)
 
-Charlie C.L. Wang (changling.wang@manchester.ac.uk)
+Charlie C.L. Wang (charlie.wang@manchester.ac.uk)
